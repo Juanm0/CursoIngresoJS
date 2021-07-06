@@ -5,9 +5,9 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 
-	var primernumero;
-	var segundonumero;
-	var suma;
+	let primernumero;
+	let segundonumero;
+	let suma;
 	primernumero = txtIdNumeroUno.value;
 	segundonumero=txtIdNumeroDos.value;
 	primernumero=parseInt(primernumero);
