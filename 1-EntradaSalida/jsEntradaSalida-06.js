@@ -5,14 +5,21 @@ mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
 
-	var primernumero
-	var segundonumero
-	var suma
-	document.getElementById ("txtIdNumeroUno").value = primernumero
-	document.getElementById ("txtIdNumeroDos").value = segundonumero
-	suma = parseInt (primernumero + segundonumero)
+	var primernumero;
+	var segundonumero;
+	var suma;
+	primernumero = txtIdNumeroUno.value;
+	segundonumero=txtIdNumeroDos.value;
+	primernumero=parseInt(primernumero);
+	segundonumero=parseInt(segundonumero);
+	suma = primernumero + segundonumero;
 	alert ("Su numero es: " + suma)
-	//txtIdNumeroUno
-	//txtIdNumeroDos
+	
 }
 
+//txtIdNumeroUno
+//txtIdNumeroDos
+/* 
+Entradas: dos numeros
+Porcesos: realizar la suma de los 2 numeros
+Salidas: la suma de los dos numeros */
