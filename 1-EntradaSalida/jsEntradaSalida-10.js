@@ -1,4 +1,4 @@
-/*
+/* Navarro Juan Ejercicio 10 Div H
 Debemos lograr tomar el importe por ID.
 Transformarlo a entero (parseInt), luego
 mostrar el importe con un Descuento del 25 %

@@ -1,4 +1,4 @@
-/*
+/*Navarro Juan Ejercicio 7 Div H
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
@@ -50,8 +50,8 @@ function dividir()
 	let division;
 	PrimerNumero = txtIdNumeroUno.value;
 	SegundoNumero=txtIdNumeroDos.value;
-	PrimerNumero=parseInt(PrimerNumero);
-	SegundoNumero=parseInt(SegundoNumero);
+	PrimerNumero=parseFloat(PrimerNumero);
+	SegundoNumero=parseFloat(SegundoNumero);
 	division = PrimerNumero / SegundoNumero;
 	alert ("Su numero es: " + division);
 }
