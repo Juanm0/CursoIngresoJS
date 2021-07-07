@@ -13,7 +13,7 @@ function sumar()
 	primernumero=parseInt(primernumero);
 	segundonumero=parseInt(segundonumero);
 	suma = primernumero + segundonumero;
-	alert ("Su numero es: " + suma)
+	alert ("Su numero es: " + suma);
 	
 }
 

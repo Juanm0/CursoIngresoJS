@@ -5,5 +5,16 @@ mostrar el importe con un Descuento del 25 %
 en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
-	alert("ok");
+    let Sueldo;
+    let Resultado;
+	
+	Sueldo = txtIdImporte.value;
+	Sueldo=parseInt(Sueldo);
+	Resultado=Sueldo *(-0.25) + Sueldo;
+	txtIdResultado.value = Resultado;
+	
+	
+    //txtIdImporte
+	//txtIdResultado
 }
+
