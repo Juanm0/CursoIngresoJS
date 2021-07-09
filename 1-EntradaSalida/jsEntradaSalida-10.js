@@ -1,4 +1,4 @@
-/* Navarro Juan Ejercicio 10 Div H
+/* Navarro Juan Ejercicio 10bis Div H
 Debemos lograr tomar el importe por ID.
 Transformarlo a entero (parseInt), luego
 mostrar el importe con un Descuento del 25 %
@@ -7,10 +7,13 @@ function mostrarAumento()
 {
     let Sueldo;
     let Resultado;
+    let porcentaje
 	
 	Sueldo = txtIdImporte.value;
 	Sueldo=parseInt(Sueldo);
-	Resultado=Sueldo *(-0.25) + Sueldo;
+	porcentaje=parseInt(porcentaje);
+	porcentaje=prompt("ingrese el porcentaje");
+	Resultado=Sueldo *(-(porcentaje*0.01)) + Sueldo;
 	txtIdResultado.value = Resultado;
 	
 	
