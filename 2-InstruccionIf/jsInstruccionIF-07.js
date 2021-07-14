@@ -9,8 +9,6 @@ function mostrar()
 	edad=txtIdEdad.value;
 	edad=parseInt(edad);
 	estado=estadoCivil.value;
-/*  Si eliminamos la variante "estado", podemos resolver
-	el ejercicio poniendo estadoCivil.value!="Soltero"   */
 	if(edad<18&&estado!="Soltero")
 	{
 		alert("Usted es muy pequeño para NO ser soltero.");
@@ -19,3 +17,7 @@ function mostrar()
 //txtIdEdad
 //estadoCivil
 }//FIN DE LA FUNCIÓN
+
+/*  Si eliminamos la variante "estado", podemos resolver
+	el ejercicio poniendo estadoCivil.value!="Soltero" 
+	Pero eso seria una mala practica  */
