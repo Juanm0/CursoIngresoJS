@@ -36,7 +36,7 @@ function Circulo ()
 	radio=txtIdRadio.value;
 	radio=parseFloat(radio);
 	diametro=radio*2;
-	perimetro=diametro*(3.14159265359);
+	perimetro=diametro*Math.PI;//Antes habia apuesto 3.14159265359 pero seria mala practica
 	alambreTotal=perimetro*3;
 	alambreTotal=alambreTotal.toFixed(2);
 	alert("La cantidad de alambre necesaria para su terreno circular es de "+alambreTotal+" metros.")
