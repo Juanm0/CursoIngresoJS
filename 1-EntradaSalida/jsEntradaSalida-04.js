@@ -7,6 +7,7 @@ function mostrar()
 	var nombreIngresado;
 
 	nombreIngresado = prompt("ingrese su nombre");
+	alert("gol de boca");
 
 	document.getElementById ("txtIdNombre").value = nombreIngresado;
 }
