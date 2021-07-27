@@ -1,0 +1,1 @@
+acumuladores y contadores inicializar en 0
