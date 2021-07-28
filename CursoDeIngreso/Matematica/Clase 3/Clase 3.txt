@@ -1,0 +1,22 @@
+^ = V corta dada vuelta, significa Y (es lo mismo que el && de programacion).(conjuncion)
+
+v= v corta comun, significa O (oh) (es lo mismo que el || de programacion).(Disyuncion)
+
+=> = significa entonces. (Condicional)
+
+<=> = significa si y solo si. (Bicondicional)
+
+negacion se pone NO adelante de la proposicion y se simboliza con la letra de la proposicion con un menos adelante.
+ P = Tengo sueño
+-P = NO Tengo sueño
+(se utiliza para negar) ej NO el oxigeno es un metal (aunque se lea mal, queda asi, el NO, SIEMPRE adelante)
+
+
+
+
+
+
+
+
+
+
