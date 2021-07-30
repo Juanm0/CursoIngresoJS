@@ -1,146 +1,6 @@
+//  Navarro Juan Div H, Modelo de parcial 2020
+/*Enunciado:
 
-function mostrar()
-{
-    var tipoDeProducto;
-	var precio;
-	var cantidadProductosCargados;
-	var cantidadUnidades;
-	var fabricante;
-	var marca;
-	var alcoholMasBaratoPrecio;
-	var alcoholMasBaratoBandera;
-	var alcoholMasBaratoUnidades;
-	var alcoholMasBaratoFabricante;
-	var contadorBarbijos;
-	var acumuladorBarbijos;
-	var contadorJabon;
-	var acumuladorJabon;
-	var contadorAlcohol;
-	var acumuladorAlcohol;
-	var tipoConMasUnidades;
-	var promedio;
-	var mensaje;
-
-	promedio=parseInt(promedio);
-	cantidadUnidades=0;
-	cantidadProductosCargados=0;
-	alcoholMasBaratoBandera="primera vez";
-	contadorJabon=0;
-	parseInt(contadorJabon);
-	contadorBarbijos=0;
-	parseInt(contadorBarbijos);
-	contadorAlcohol=0;
-	parseInt(contadorAlcohol);
-	acumuladorJabon=0;
-	acumuladorJabon=parseInt(acumuladorJabon);
-	acumuladorAlcohol=0;
-	acumuladorAlcohol=parseInt(acumuladorAlcohol);
-	acumuladorBarbijos=0;
-	acumuladorBarbijos=parseInt(acumuladorBarbijos);
-	masUnidadesBandera="Primera vez";
-
-	while(cantidadProductosCargados<5)
-	{
-		tipoDeProducto=prompt("Ingrese el producto que desea cargar");
-		
-		while(tipoDeProducto!="alcohol"&&tipoDeProducto!="jabon"&&tipoDeProducto!="barbijo")
-		{
-			tipoDeProducto=prompt("Error, ingrese una opcion valida");
-		}
-
-		precio=prompt("Ingrese el precio del producto");
-		precio=parseInt(precio);
-
-		while(precio<100||precio>300)
-		{
-			precio=prompt("Error, ingrese un precio valido");
-			precio=parseInt(precio);
-		}
-		
-
-		cantidadUnidades=prompt("Ingrese la cantidad de unidades");
-		cantidadUnidades=parseInt(cantidadUnidades);
-
-		while(cantidadUnidades<1||cantidadUnidades>1000)
-		{
-			cantidadUnidades=prompt("Error, ingrese un numero valido");
-			cantidadUnidades=parseInt(cantidadUnidades);
-		}
-
-		marca=prompt("Ingrese marca");
-		fabricante=prompt("Ingrese fabricante");
-
-		if(tipoDeProducto=="alcohol")
-		{
-			if(alcoholMasBaratoBandera=="primera vez")
-			{
-				alcoholMasBaratoBandera="segunda";
-
-				alcoholMasBaratoPrecio=precio;
-				alcoholMasBaratoUnidades=cantidadUnidades;
-				alcoholMasBaratoFabricante=fabricante;
-			}
-			else
-			{
-				if(alcoholMasBaratoPrecio>precio)
-				{
-					alcoholMasBaratoPrecio=precio;
-					alcoholMasBaratoUnidades=cantidadUnidades;
-					alcoholMasBaratoFabricante=fabricante;
-				}
-			}
-		}
-
-		switch(tipoDeProducto)
-		{
-			case "barbijo":
-				contadorBarbijos=contadorBarbijos+1;
-				acumuladorBarbijos=acumuladorBarbijos+cantidadUnidades;
-				break;
-			case "alcohol":
-				contadorAlcohol=contadorAlcohol+1;
-				acumuladorAlcohol=acumuladorAlcohol+cantidadUnidades;
-				break;
-			case "jabon":
-				contadorJabon=contadorJabon+1;
-				acumuladorJabon=acumuladorJabon+cantidadUnidades;
-				break;
-		}
-
-		cantidadProductosCargados=cantidadProductosCargados+1;
-	}
-
-	if(acumuladorJabon>acumuladorAlcohol&&acumuladorJabon>acumuladorBarbijos)
-	{
-		tipoConMasUnidades="El tipo de producto con mas unidades es jabon";
-		promedio=acumuladorJabon/contadorJabon;
-	}
-	else
-	{
-		if(acumuladorBarbijos>acumuladorAlcohol)
-		{
-			tipoConMasUnidades="El tipo de producto con mas unidades es barbijo";
-			promedio=acumuladorBarbijos/contadorBarbijos;
-		}
-		else
-		{
-			tipoConMasUnidades="El tipo de producto con mas unidades es alcohol";
-			promedio=acumuladorAlcohol/contadorAlcohol;
-		}
-	}
-
-	mensaje="Del alcohol mas barato hay "+alcoholMasBaratoUnidades+" unidades";
-	mensaje=mensaje+" y lo fabrica "+alcoholMasBaratoFabricante+"\n";
-	mensaje=mensaje+tipoConMasUnidades+" y su promedio de compra es "+promedio+"\n";
-	mensaje=mensaje+"Hay "+acumuladorJabon+" unidades de jabon";
-	console.log(mensaje);
-}
-
-
-/*
-
-Autor: Juan Poux
-Ejercicio: Parcial 2020 1 punto A, B y C
 Debemos realizar la carga de 5(cinco) productos de prevención de contagio,
 de cada una debo obtener los siguientes datos:
 el tipo (validar "barbijo" , "jabón" o "alcohol") ,
@@ -148,143 +8,115 @@ el precio (validar entre 100 y 300),
 la cantidad de unidades (no puede ser 0 o negativo y no debe superar las 1000 unidades),
 la Marca y el fabricante.
 Se debe Informar al usuario lo siguiente:
-a) Del más barato de los alcohol, la cantidad de unidades y el fabricante
-b) Del tipo con mas unidades, el promedio por compra
-c) Cuántas unidades de jabones hay en total
-
+//a) Del más barato de los alcohol, la cantidad de unidades y el fabricante
+//b) Del tipo con mas unidades, el promedio por compra
+//c) Cuántas unidades de jabones hay en total*/
 function mostrar()
 {
-	var tipoDeProducto;
-	var precio;
-	var cantidadProductosCargados;
+	var agregarProducto;
+	var productoIngresado;
+	var precioProducto;
 	var cantidadUnidades;
-	var fabricante;
-	var marca;
-	var alcoholMasBaratoPrecio;
-	var alcoholMasBaratoBandera;
-	var alcoholMasBaratoUnidades;
-	var alcoholMasBaratoFabricante;
-	var contadorBarbijos;
-	var acumuladorBarbijos;
-	var contadorJabon;
-	var acumuladorJabon;
+	var marcaProducto;
+	var fabricanteProducto;
+	var minimoPrecioAlchohol;
+	var unidadesMinimoPrecioAlchohol;
+	var fabricanteMinimoPrecioAlchohol;
+	var precioFinal;
+	var banderaAlcohol;
+	var banderaMasUnidades;
+	var mayorCantidadUnidades;
+	var productoMasUnidades;
+	var promedioMasUnidades;
+	var contadorJabon;//ME CONFUNDI CON LOS CONCEPTOS DE CONTADOR Y ACUMULADOR, TENDRIA QUE INVERTIRLOS, PERO NO PASA NADA
 	var contadorAlcohol;
+	var contadorBarbijo;
+	var acumuladorJabon;
 	var acumuladorAlcohol;
-	var tipoConMasUnidades;
-	var promedio;
-	var mensaje;
+	var acumuladorBarbijo;
 
-	promedio=parseInt(promedio);
-	cantidadUnidades=0;
-	cantidadProductosCargados=0;
-	alcoholMasBaratoBandera="primera vez";
-	contadorJabon=0;
-	parseInt(contadorJabon);
-	contadorBarbijos=0;
-	parseInt(contadorBarbijos);
-	contadorAlcohol=0;
-	parseInt(contadorAlcohol);
+	agregarProducto=0;
+	banderaAlcohol=true;
+	banderaMasUnidades=true;
 	acumuladorJabon=0;
-	acumuladorJabon=parseInt(acumuladorJabon);
 	acumuladorAlcohol=0;
-	acumuladorAlcohol=parseInt(acumuladorAlcohol);
-	acumuladorBarbijos=0;
-	acumuladorBarbijos=parseInt(acumuladorBarbijos);
-	masUnidadesBandera="Primera vez";
-
-	while(cantidadProductosCargados<5)
+	acumuladorBarbijo=0;
+	contadorBarbijo=0;
+	contadorJabon=0;
+	contadorAlcohol;
+	unidadesMinimoPrecioAlchohol=0;
+	while(agregarProducto<2)
 	{
-		tipoDeProducto=prompt("Ingrese el producto que desea cargar");
-		
-		while(tipoDeProducto!="alcohol"&&tipoDeProducto!="jabon"&&tipoDeProducto!="barbijo")
+		productoIngresado=prompt("¿Que producto que desea?");
+		while(productoIngresado!="Barbijo"&&productoIngresado!="Jabon"&&productoIngresado!="Alcohol")
 		{
-			tipoDeProducto=prompt("Error, ingrese una opcion valida");
+			productoIngresado=prompt("Error.. Ingrese un producto valido (Barbijo , Jabon o Alcohol)");
 		}
-
-		precio=prompt("Ingrese el precio del producto");
-		precio=parseInt(precio);
-
-		while(precio<100||precio>300)
+		precioProducto=prompt("Ingrese el precio de su "+productoIngresado);
+		precioProducto=parseInt(precioProducto);
+		while(precioProducto<100||precioProducto>300)
 		{
-			precio=prompt("Error, ingrese un precio valido");
-			precio=parseInt(precio);
+			precioProducto=prompt("Error.. Ingrese un precio entre 100 y 300");
+			precioProducto=parseInt(precioProducto);
 		}
-		
-
-		cantidadUnidades=prompt("Ingrese la cantidad de unidades");
+		cantidadUnidades=prompt("¿Cuantas unidades de su "+productoIngresado+" desea llevar?");
 		cantidadUnidades=parseInt(cantidadUnidades);
-
 		while(cantidadUnidades<1||cantidadUnidades>1000)
 		{
-			cantidadUnidades=prompt("Error, ingrese un numero valido");
+			cantidadUnidades=prompt("Error.. Ingrese una cantidad valida (hasta 1000 unidades)");
 			cantidadUnidades=parseInt(cantidadUnidades);
 		}
-
-		marca=prompt("Ingrese marca");
-		fabricante=prompt("Ingrese fabricante");
-
-		if(tipoDeProducto=="alcohol")
+		marcaProducto=prompt("Ingrese la marca de su "+productoIngresado);
+		fabricanteProducto=prompt("Ingrese el nombre del fabricante");
+		precioFinal=cantidadUnidades*precioProducto;
+		switch(productoIngresado)
 		{
-			if(alcoholMasBaratoBandera=="primera vez")
+			case "Alcohol"://a) Del más barato de los alcohol, la cantidad de unidades y el fabricante
+			acumuladorAlcohol++;
+			contadorAlcohol+=cantidadUnidades;
+			if(precioFinal<minimoPrecioAlchohol||banderaAlcohol==true)
 			{
-				alcoholMasBaratoBandera="segunda";
-
-				alcoholMasBaratoPrecio=precio;
-				alcoholMasBaratoUnidades=cantidadUnidades;
-				alcoholMasBaratoFabricante=fabricante;
+				minimoPrecioAlchohol=precioFinal;
+				fabricanteMinimoPrecioAlchohol=fabricanteProducto;
+				unidadesMinimoPrecioAlchohol=cantidadUnidades;
+				banderaAlcohol=false;
 			}
-			else
-			{
-				if(alcoholMasBaratoPrecio>precio)
-				{
-					alcoholMasBaratoPrecio=precio;
-					alcoholMasBaratoUnidades=cantidadUnidades;
-					alcoholMasBaratoFabricante=fabricante;
-				}
-			}
-		}
+			break;
 
-		switch(tipoDeProducto)
-		{
-			case "barbijo":
-				contadorBarbijos=contadorBarbijos+1;
-				acumuladorBarbijos=acumuladorBarbijos+cantidadUnidades;
-				break;
-			case "alcohol":
-				contadorAlcohol=contadorAlcohol+1;
-				acumuladorAlcohol=acumuladorAlcohol+cantidadUnidades;
-				break;
-			case "jabon":
-				contadorJabon=contadorJabon+1;
-				acumuladorJabon=acumuladorJabon+cantidadUnidades;
-				break;
-		}
+			case "Jabon"://c) Cuántas unidades de jabones hay en total
+			acumuladorJabon++;
+			contadorJabon+=cantidadUnidades;
+			break;
 
-		cantidadProductosCargados=cantidadProductosCargados+1;
+			case "Barbijo":
+			acumuladorBarbijo++;
+			contadorBarbijo+=cantidadUnidades;
+			break;
+		}
+		if(cantidadUnidades>mayorCantidadUnidades||banderaMasUnidades==true)
+		{//b) Del tipo con mas unidades, el promedio por compra
+			mayorCantidadUnidades=cantidadUnidades;
+			productoMasUnidades=productoIngresado;
+			banderaMasUnidades=false;
+		}
+		agregarProducto++;
 	}
-
-	if(acumuladorJabon>acumuladorAlcohol&&acumuladorJabon>acumuladorBarbijos)
+	if(contadorAlcohol>contadorJabon&&contadorAlcohol>contadorBarbijo)
 	{
-		tipoConMasUnidades="El tipo de producto con mas unidades es jabon";
-		promedio=acumuladorJabon/contadorJabon;
+		promedioMasUnidades=contadorAlcohol/acumuladorAlcohol;
 	}
 	else
 	{
-		if(acumuladorBarbijos>acumuladorAlcohol)
+		if(contadorBarbijo>contadorJabon)
 		{
-			tipoConMasUnidades="El tipo de producto con mas unidades es barbijo";
-			promedio=acumuladorBarbijos/contadorBarbijos;
+			promedioMasUnidades=contadorBarbijo/acumuladorBarbijo;
 		}
 		else
 		{
-			tipoConMasUnidades="El tipo de producto con mas unidades es alcohol";
-			promedio=acumuladorAlcohol/contadorAlcohol;
+			promedioMasUnidades=contadorJabon/acumuladorJabon;
 		}
 	}
-
-	mensaje="Del alcohol mas barato hay "+alcoholMasBaratoUnidades+" unidades";
-	mensaje=mensaje+" y lo fabrica "+alcoholMasBaratoFabricante+"\n";
-	mensaje=mensaje+tipoConMasUnidades+" y su promedio de compra es "+promedio+"\n";
-	mensaje=mensaje+"Hay "+acumuladorJabon+" unidades de jabon";
-	console.log(mensaje);
-}*/
+	document.write("A) La cantidad de unidades del alcohol mas barato es de "+unidadesMinimoPrecioAlchohol+" unidades y su fabricante es "+fabricanteProducto+"<br>");
+	document.write("B) El producto con más unidades es el "+productoMasUnidades+" y su promedio de compra es de "+promedioMasUnidades+" unidades <br>");
+	document.write("C) Hay "+contadorJabon+" unidades de Jabon");
+}
