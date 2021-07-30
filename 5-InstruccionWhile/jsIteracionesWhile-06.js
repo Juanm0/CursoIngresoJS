@@ -18,7 +18,7 @@ function mostrar()
 		suma+=numeroIngresado;
 	  //suma=suma+numeroIngresado
 	  //contador = contador + 1;
-	    contador++;
+	    contador
 	}
 	promedio=suma/contador;
 	txtIdSuma.value=suma;

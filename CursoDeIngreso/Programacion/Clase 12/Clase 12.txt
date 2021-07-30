@@ -1,0 +1,10 @@
+		precioDeProducto=prompt("Ingrese el precio de su "+tipoDeProducto);
+		precioDeProducto=parseInt(precioDeProducto);
+		while(isNaN(precioDeProducto)||precioDeProducto<5000||precioDeProducto>18000)
+		{
+			precioDeProducto=prompt("Error.. Ingrese un precio valido (entre 5000 y 18000)");
+			precioDeProducto=parseInt(precioDeProducto);//se pone devuelta el parseint por que se pone
+                                                                     promt, entonces hay que volver a parsearlo
+		}
+
+

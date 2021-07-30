@@ -1,0 +1,17 @@
+Shift + Tab = tira todo lo seleccionado para atras.
+
+Bloq Mayús + Tab = tira todo lo seleccionado para adelante.
+
+la flag se una cuando tengo una variable que de entrada no puedo definir
+
+Bloq Mayús + Supr = borrar a la derecha
+
+for (inicializacion de la variable de control;condicion de contiunuidad;incremento de variable de control)
+                     inicia la variable          evalua la condicion   hacer la condicion falsa
+
+
+la fumcion del break; es romper la estructura repetitiva
+
+continue; forza lsa iteracion
+
+for(;;) es un for infinito (mala practica)

@@ -1,31 +1,79 @@
 /*
 Al presionar el botón pedir  números  
 hasta que el usuario quiera, mostrar:
-1-Suma de los negativos.
-2-Suma de los positivos.
-3-Cantidad de positivos.
-4-Cantidad de negativos.
-5-Cantidad de ceros.
-6-Cantidad de números pares.
-7-Promedio de positivos.
-8-Promedios de negativos.
-9-Diferencia entre positivos y negativos, (positvos-negativos). */
+//1-Suma de los negativos.
+//2-Suma de los positivos.
+//3-Cantidad de positivos.
+//4-Cantidad de negativos.
+//5-Cantidad de ceros.
+//6-Cantidad de números pares.
+//7-Promedio de positivos.
+//8-Promedios de negativos.
+//9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
 	var numeroIngresado;
-	var sumaNegativos=0;
+	var sumaNegativos;
+	var sumaPositivos;
+	var IngresarOtroNumero;
+	var contadorCeros;
+	var contadorPositivos;
+	var contadorNegativos;
+	var contadorPares;
+	var promedioPositivos;
+	var promedioNegativos;
+	var calculoRestaTotal;
 
-	respuesta="si";
+	IngresarOtroNumero=true;
+	sumaPositivos=0;
+	sumaNegativos=0;
+	contadorCeros=0;
+	contadorNegativos=0;
+	contadorPositivos=0;
+	contadorPares=0;
 
-	while(respuesta=="si")
+	while(IngresarOtroNumero==true)
 	{
-		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		numeroIngresado=prompt("Ingrese un numero");
+		numeroIngresado=parseInt(numeroIngresado);-4
+		if(numeroIngresado>0)
+		{
+			sumaPositivos+=numeroIngresado;//2-Suma de los positivos.
+			contadorPositivos++;//3-Cantidad de positivos.
+		}
+		else
+		{
+			if(numeroIngresado<0)
+			{
+				sumaNegativos+=numeroIngresado;//1-Suma de los negativos.
+				contadorNegativos++;//4-Cantidad de negativos.
+			}
+			else
+			{
+				contadorCeros++;//5-Cantidad de ceros.
+			}
+		}
+		if(numeroIngresado%2==0)//6-Cantidad de números pares.
+		{
+			contadorPares++;
+		}
+		IngresarOtroNumero=confirm("Desea ingresar otro numero?");
+	}
+	promedioPositivos=sumaPositivos/contadorPositivos;//7-Promedio de positivos.
+	promedioNegativos=sumaNegativos/contadorNegativos;//8-Promedios de negativos.
+	calculoRestaTotal=sumaPositivos+sumaNegativos;//9-Diferencia entre positivos y negativos, (positvos-negativos).
+	document.write("1) La suma de los negativos es "+sumaNegativos+"<br>");
+	document.write("2) La suma de los positivos es "+sumaPositivos+"<br>");
+	document.write("3) La cantidad de numeros positivos es "+contadorPositivos+"<br>");
+	document.write("4) La cantidad de numeros negativos es "+contadorNegativos+"<br>");
+	document.write("5) La cantidad de ceros ingresados es "+contadorCeros+"<br>");
+	document.write("6) La cantidad de números pares es de "+contadorPares+"<br>");
+	document.write("7) El promedio de positivos es "+promedioPositivos+"<br>");
+	document.write("8) El promedio de numeros negativos es "+promedioNegativos+"<br>");
+	document.write("9) La diferencia entre positivos y negativos es "+calculoRestaTotal);
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+
 }//FIN DE LA FUNCIÓN
 
 
