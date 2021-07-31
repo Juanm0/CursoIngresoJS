@@ -1,3 +1,4 @@
+argumentativo
 la funcion del lenguaje es apelativa 
 
 porque argumenta, está basado
@@ -85,3 +86,6 @@ desmentir, clarificacion, consecion, consecion, clarificacion, consecion, clarif
 solucion al final del texto argumentativo
 
 si tengo que hacer una sintesis de 5 lineas, la hago de la conclusion.
+
+generalizacion tesis e hipotesis son lo mas importante de la argumentacion
+
