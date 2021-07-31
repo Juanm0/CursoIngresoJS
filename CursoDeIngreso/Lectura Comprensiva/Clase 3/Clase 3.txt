@@ -46,14 +46,15 @@ Clarificar: Hechar luz, aclararun concepto, dar mayor info para que ese concepto
 hesitar: permite explayarme sobre los pro y contras del mismo tema. EJemplo: la globalizacion permitio comprar diversos
 recursos de otros lados, pero tambine genero desocupacion.
 
-ironia: hay una gran critica en el fondo
+[ironia: hay una gran critica en el fondo
 
 matafora: se reemplaza un termino academico x uno coloquial, "el soldado vio un indio de ojos color de cielo"
 
 Hipervole: preposicion que permite exagerar x ejemplo : el finde pasado trabaje como un esclavo.
 
+
 oximoro: compuesto por 2 o  alo sumo 3 palabras que por separado son contrasenctivos, significan lo opuesto
-ejemplo : realidad virtual, crecimiento negativo, vista ciega,instante eterno.
+ejemplo : realidad virtual, crecimiento negativo, vista ciega,instante eterno.] no entran en el parcial
 
 
 ironia, clarificacion, ejemplificacion, consecion, metafora, clarificacion, ironia
@@ -88,4 +89,6 @@ solucion al final del texto argumentativo
 si tengo que hacer una sintesis de 5 lineas, la hago de la conclusion.
 
 generalizacion tesis e hipotesis son lo mas importante de la argumentacion
+
+
 
