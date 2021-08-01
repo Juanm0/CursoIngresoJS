@@ -31,6 +31,6 @@ function mostrar()
 		}
 		seguir=confirm("Ingresar otro numero?");
 	}
-	txtIdMaximo.value="El numero maximo que ingresó es "+numeroMaximo+;
-	txtIdMinimo.value="El numero minimo que ingresó es "+numeroMinimo+;
+	txtIdMaximo.value="El numero maximo que ingresó es "+numeroMaximo;
+	txtIdMinimo.value="El numero minimo que ingresó es "+numeroMinimo;
 }//FIN DE LA FUNCIÓN
