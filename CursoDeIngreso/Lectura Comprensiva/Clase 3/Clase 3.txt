@@ -44,7 +44,7 @@ Clarificar: Hechar luz, aclararun concepto, dar mayor info para que ese concepto
 (asi mismo, ademas, y, tambien, etc) <-- Nexos de la clarificacion
 
 hesitar: permite explayarme sobre los pro y contras del mismo tema. EJemplo: la globalizacion permitio comprar diversos
-recursos de otros lados, pero tambine genero desocupacion.
+recursos de otros lados, pero tambine genero desocupacion. nexo: por otro lado, 
 
 [ironia: hay una gran critica en el fondo
 
